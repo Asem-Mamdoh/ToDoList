@@ -68,6 +68,9 @@ function taskDocument() {
         
         `;
 
+        if (data.length > 0) {
+          deleteAll.style.display = "block";
+        }
   });
 }
 
