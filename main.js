@@ -37,16 +37,21 @@ function dataObject() {
     inputValue.value = "";
     setLocalStorageData(data);
     taskDocument();
-    console.log(data);
+    // console.log(data);
     deleteAll.style.display = "block";
   }
 }
 
+// Delete ONe Task 
 let deleteTask = (index) => {
   data.splice(index, 1);
-  if (index) {
-    // console.log(data);
-  }
+  window.localStorage.setItem("tasks", JSON.stringify(data));
+
+  // Condtion For Delete >> (Delete All Btn) <<<
+if (data.length === 0) {
+  deleteAll.style.display = "none";
+}
+
   taskDocument();
 };
 
@@ -62,6 +67,7 @@ function taskDocument() {
         
         
         `;
+
   });
 }
 
@@ -83,12 +89,12 @@ function deleteAllTasks() {
   window.location.reload();
 }
 
-if (tasks.innerHTML !== "") {
-  deleteAll.style.display = "block";
-} else {
-  deleteAll.style.display = "none";
-}
+// if (tasks.innerHTML !== "") {
+//   deleteAll.style.display = "block";
+// } else {
+//   deleteAll.style.display = "none";
+// }
 
 btnAdd.addEventListener("click", dataObject);
 
-console.log(tasks.innerHTML.length);
+
