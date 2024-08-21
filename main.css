@@ -1,0 +1,137 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.form {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  background-color: #eeedf0;
+  border-radius: 8px;
+}
+.input1 {
+  width: 60%;
+  margin: auto;
+  padding: 20px 100px;
+  border-radius: 8px;
+  border: none;
+  outline-color: #2adfff;
+  font-family: system-ui;
+  font-size: 19px;
+  font-weight: 600;
+}
+.input2 {
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff6c2a;
+  color: #fff;
+  cursor: pointer;
+}
+.input2:hover {
+  transform: scale(1.03);
+}
+
+.tasks {
+  padding: 20px;
+  text-align: center;
+  display: block;
+  width: 90%;
+  margin: auto;
+  background-color: #eeedf0;
+  border-radius: 8px;
+  margin-top: 30px;
+  font-family: "Lucida Sans Unicode";
+}
+
+.form-group{
+  background-color: #fff;
+  padding: 20px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;  
+}
+/* .valueText {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+} */
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff6c2a;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.update{
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #04aa0c;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+  
+}
+
+.update:hover {
+  transform: scale(1.03);
+}
+
+.div-delete{
+  /* background-color: #04aa0c; */
+  width: 95%;
+  margin: auto;
+}
+
+.deleteAll{
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff6c2a;
+  color: #FFF;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+
+  
+}
+
+.deleteAll:hover{
+  transform: scale(1.03);
+
+}
+
